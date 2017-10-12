@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sreevidya.learnmarathi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NumbersActivity"
+            android:label="@string/section_numbers"/>
+        <activity android:name=".ColorsActivity"
+            android:label="@string/section_colors"/>
+        <activity android:name=".FamilyActivity"
+            android:label="@string/section_family"/>
+        <activity android:name=".PhrasesActivity"
+            android:label="@string/section_phrases"/>
+    </application>
+
+</manifest>

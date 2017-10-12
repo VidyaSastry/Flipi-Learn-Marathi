@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sreevidya.learnmarathi.MainActivity">
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/section_numbers"
+        android:layout_weight="1"
+        android:textColor="@color/section_text_color"
+        android:background="@color/section_numbers"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/section_colors"
+        android:layout_weight="1"
+        android:textColor="@color/section_text_color"
+        android:background="@color/section_colors"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/section_family"
+        android:layout_weight="1"
+        android:textColor="@color/section_text_color"
+        android:background="@color/section_family"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/section_phrases"
+        android:layout_weight="1"
+        android:textColor="@color/section_text_color"
+        android:background="@color/section_phrases"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Flipi</string>
+    <string name="section_numbers">Numbers</string>
+    <string name="section_colors">Colors</string>
+    <string name="section_family">Family Members</string>
+    <string name="section_phrases">Common Phrases</string>
+</resources>
