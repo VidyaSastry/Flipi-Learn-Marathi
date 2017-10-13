@@ -45,14 +45,14 @@ public class FamilyActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         final ArrayList<Word> family = new ArrayList<>();
-        family.add(new Word("Father", "Bābā", R.raw.family_1_father, R.drawable.family_father));
+        family.add(new Word("Father", "Vaḍīla", R.raw.family_1_father, R.drawable.family_father));
         family.add(new Word("Mother", "Āī", R.raw.family_2_mother, R.drawable.family_mother));
         family.add(new Word("Son", "Mulagā", R.raw.family_3_son, R.drawable.family_son));
         family.add(new Word("Daughter", "Mulagī", R.raw.family_4_daughter, R.drawable.family_daughter));
         family.add(new Word("Older brother", "Mōṭhā bhā'ū", R.raw.family_5_older_brother, R.drawable.family_older_brother));
-        family.add(new Word("Younger brother", "Dhākaṭā bhā'ū", R.raw.family_6_younger_brother, R.drawable.family_younger_brother));
+        family.add(new Word("Younger brother", "Lahāna bhā'ū", R.raw.family_6_younger_brother, R.drawable.family_younger_brother));
         family.add(new Word("Older sister", "Mōṭhī bahīṇa", R.raw.family_7_older_sister, R.drawable.family_older_sister));
-        family.add(new Word("Younger sister", "Dhākaṭī bahīṇa", R.raw.family_8_younger_sister, R.drawable.family_younger_sister));
+        family.add(new Word("Younger sister", "Lahāna bahīṇa", R.raw.family_8_younger_sister, R.drawable.family_younger_sister));
         family.add(new Word("Grandfather", "Ājobā", R.raw.family_10_grandfather, R.drawable.family_grandfather));
         family.add(new Word("Grandmother", "Ājī", R.raw.family_9_grandmother, R.drawable.family_grandmother));
 
@@ -68,7 +68,7 @@ public class FamilyActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word number = family.get(position);
 
-                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
                 releaseMediaPlayer();
 

@@ -7,7 +7,7 @@ class Word {
 
     private String mMaratiWord;
     private String mEnglishWord;
-    private int mImageResource  = NO_IMAGE_PROVIDED;;
+    private int mImageResource  = NO_IMAGE_PROVIDED;
     private int mAudioResource;
 
     Word(String maratiWord, String englishWord, int audioResource) {
@@ -23,19 +23,19 @@ class Word {
         this.mAudioResource = audioResource;
     }
 
-    public String getmMaratiWord() {
+    String getmMaratiWord() {
         return mMaratiWord;
     }
 
-    public String getmEnglishWord() {
+    String getmEnglishWord() {
         return mEnglishWord;
     }
 
-    public int getmImageResource() {
+    int getmImageResource() {
         return mImageResource;
     }
 
-    public int getmAudioResource() {
+    int getmAudioResource() {
         return mAudioResource;
     }
 

@@ -46,11 +46,11 @@ public class ColorsActivity extends AppCompatActivity {
         final ArrayList<Word> colors = new ArrayList<>();
         colors.add(new Word("Red", "Lāla", R.raw.colors_1_red, R.drawable.color_red));
         colors.add(new Word("Green", "Hiravā", R.raw.colors_2_green, R.drawable.color_green));
-        colors.add(new Word("Blue", "Niḷā", R.raw.colors_3_blue, R.drawable.color_gray));
-        colors.add(new Word("Pink", "Gulābī", R.raw.colors_4_pink, R.drawable.color_red));
+        colors.add(new Word("Blue", "Niḷā", R.raw.colors_3_blue, R.drawable.color_blue));
+        colors.add(new Word("Yellow", "Pivaḷā", R.raw.colors_7_yellow, R.drawable.color_yellow));
+        colors.add(new Word("Pink", "Gulābī", R.raw.colors_4_pink, R.drawable.color_pink));
         colors.add(new Word("White", "Pāṇḍharā", R.raw.colors_6_white, R.drawable.color_white));
         colors.add(new Word("Black", "Kāḷā", R.raw.colors_5_black, R.drawable.color_black));
-        colors.add(new Word("Yellow", "Pivaḷā", R.raw.colors_7_yellow, R.drawable.color_mustard_yellow));
 
         WordAdapter adapter = new WordAdapter(this, colors, R.color.section_colors);
 
@@ -64,7 +64,7 @@ public class ColorsActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word number = colors.get(position);
 
-                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
                 releaseMediaPlayer();
 

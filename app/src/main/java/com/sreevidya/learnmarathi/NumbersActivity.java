@@ -48,7 +48,7 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add(new Word("Two", "Dōna", R.raw.number_2_two, R.drawable.number_two));
         numbers.add(new Word("Three", "Tīna", R.raw.number_3_three, R.drawable.number_three));
         numbers.add(new Word("Four", "Cāra", R.raw.number_4_four, R.drawable.number_four));
-        numbers.add(new Word("Five", "Pāca", R.raw.number_5_five, R.drawable.number_five));
+        numbers.add(new Word("Five", "Pānca", R.raw.number_5_five, R.drawable.number_five));
         numbers.add(new Word("Six", "Sahā", R.raw.number_6_six, R.drawable.number_six));
         numbers.add(new Word("Seven", "Sāta", R.raw.number_7_seven, R.drawable.number_seven));
         numbers.add(new Word("Eight", "Āṭha", R.raw.number_8_eight, R.drawable.number_eight));
@@ -67,7 +67,7 @@ public class NumbersActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word number = numbers.get(position);
 
-                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener,AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener,AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
                 releaseMediaPlayer();
 
